@@ -1,0 +1,32 @@
+/* Tooltip.css */
+.tooltip-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+
+.tooltip-wrapper {
+  top:50%;
+  position: fixed;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #333;
+  color: white;
+  opacity: 0.9;
+  z-index: 1000;
+  margin-left: 19%;
+  margin-top: 19%;
+}
+
+button{
+  border: none;
+  height: 43px;
+  width: 88px;
+  text-align: center;
+}
