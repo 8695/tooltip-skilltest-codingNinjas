@@ -1,15 +1,21 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import Tooltip from './hover';
 
 const App = () => {
-  return (
-    <div>
-      <Tooltip position="top" text="Thanks for hovering! i am tooltip">
-        <button>Hover me </button>
-      </Tooltip>
   
+  const [position, setPosition]=useState("");
+  return (
+    <>
+    <div className='BTN'>
+      <button className='btn-hover' onClick={()=>setPosition('top')}>Top</button>
+      <button className='btn-hover' onClick={()=>setPosition('right')}>right</button>
+      <button className='btn-hover' onClick={()=>setPosition('bottom')}>bottom</button>
+      <button className='btn-hover' onClick={()=>setPosition('left')}>left</button>
     </div>
+      <Tooltip position={position} />
+    </>
+
   );
 };
 
