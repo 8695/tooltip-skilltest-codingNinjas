@@ -7,6 +7,7 @@ const App = () => {
   const [position, setPosition]=useState("");
   return (
     <>
+    <p className='heading'> Click any button then hover it</p>
     <div className='BTN'>
       <button className='btn-hover' onClick={()=>setPosition('top')}>Top</button>
       <button className='btn-hover' onClick={()=>setPosition('right')}>right</button>

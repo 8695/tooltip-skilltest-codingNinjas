@@ -10,7 +10,7 @@ export default function Tooltip({ position }) {
   // style the position of message gif
   const tooltipStyle = {
     position: "absolute",
-    top: position === "top" ? "-85px" : position === "bottom" ? "63px" : 0,
+    top: position === "top" ? "-82px" : position === "bottom" ? "63px" : 0,
     left:
       position === "bottom" || position === "top"
         ? "52%"
@@ -50,11 +50,11 @@ export default function Tooltip({ position }) {
   // Return the tooltip element and the element that the tooltip is associated with
   return (
     <div style={{ position: "relative" }}>
-    <p className="heading">Click the any button then hover it</p>
+    
       <div
         className="hover"
         onMouseEnter={() => toggleToolip(true)}
-        onMouseLeave={() => toggleToolip(false)}
+        onMouseLeave={() => toggleToolip(true)}
         >
         <button>Hover me</button>
         </div>
