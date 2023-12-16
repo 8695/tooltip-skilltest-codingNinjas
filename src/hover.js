@@ -54,7 +54,7 @@ export default function Tooltip({ position }) {
       <div
         className="hover"
         onMouseEnter={() => toggleToolip(true)}
-        onMouseLeave={() => toggleToolip(true)}
+        onMouseLeave={() => toggleToolip(false)}
         >
         <button>Hover me</button>
         </div>
